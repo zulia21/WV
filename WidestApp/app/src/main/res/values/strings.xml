@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WidestApp</string>
+    <string name="labelfor_email"> E-mail</string>
+    <string name="labelfor_senha"> Senha </string>
+    <string name="desc_img"> Widest View Logo (png)</string>
+    <string name="desc_img_user"> Imagem Usuário (svg)</string>
+    <string name="desc_img_senha"> Imagem Senha - visível ou coberta. (svg) </string>
+    <string name="botaoLogar"> Entrar </string>
+    <string name="txtpendencias"> Pendências </string>
+    <string name="teste"> Out Of <br></br>Lens</string>
+    <string name="tema"> Fotografia </string>
+    </resources>
