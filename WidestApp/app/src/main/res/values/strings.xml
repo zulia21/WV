@@ -7,6 +7,9 @@
     <string name="desc_img_senha"> Imagem Senha - visível ou coberta. (svg) </string>
     <string name="botaoLogar"> Entrar </string>
     <string name="txtpendencias"> Pendências </string>
-    <string name="teste"> Out Of <br></br>Lens</string>
+    <string name="teste"> Out Of Lens</string>
     <string name="tema"> Fotografia </string>
+    <string name="visualizarmais"> VISUALIZAR MAIS </string>
+    <string name="teste2"> WalkInPaws </string>
+    <string name="tema2"> Pet-Shop </string>
     </resources>
