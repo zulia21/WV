@@ -22,6 +22,8 @@
         android:layout_gravity="start"
         android:visibility="visible"
         app:headerLayout="@layout/header"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:menu="@menu/drawer_menu" />
 
 

@@ -32,7 +32,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.TrabViewHolder
     @Override
     public WorkAdapter.TrabViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        return new TrabViewHolder(inflater.inflate(R.layout.trabalhos_anteriores_row, parent, false));
+        return new TrabViewHolder(inflater.inflate(R.layout.previous_work_row, parent, false));
     }
 
     @Override

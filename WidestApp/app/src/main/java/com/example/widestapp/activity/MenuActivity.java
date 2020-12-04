@@ -14,6 +14,8 @@ import com.example.widestapp.fragment.MenuFragment;
 import com.example.widestapp.R;
 import com.example.widestapp.fragment.ClientFragment;
 import com.example.widestapp.fragment.EmployeeFragment;
+import com.example.widestapp.fragment.ProjectFragment;
+import com.example.widestapp.fragment.ServicesFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.HashMap;
@@ -65,10 +67,11 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
 
         HashMap<Integer, Fragment> map = new HashMap<>();
 
-
         map.put(R.id.nav_menu, new MenuFragment());
-        map.put(R.id.nav_cliente, new ClientFragment());
-        map.put(R.id.nav_funcionario, new EmployeeFragment());
+        map.put(R.id.nav_client, new ClientFragment());
+        map.put(R.id.nav_employee, new EmployeeFragment());
+        map.put(R.id.nav_services, new ServicesFragment());
+        map.put(R.id.nav_project, new ProjectFragment());
 
         Fragment fragment = map.get(item.getItemId());
 

@@ -1,6 +1,5 @@
 package com.example.widestapp.fragment;
 
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,12 +11,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.widestapp.R;
 
-
-public class ClientFragment extends Fragment {
-
+public class ServicesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_client, container, false);
+       View view  =  inflater.inflate(R.layout.fragment_services, container, false);
+       return view;
     }
 }

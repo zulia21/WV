@@ -8,19 +8,19 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imguserprincipal"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:src="@drawable/baybay" />
 
     <TextView
         android:id="@+id/txtnomeheader"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="15dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="7dp"
         android:layout_weight="1"
         android:fontFamily="@font/roboto_condensed_regular"
         android:text="@string/testenome"
