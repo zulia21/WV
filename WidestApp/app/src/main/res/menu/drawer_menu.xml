@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_cliente"
+            android:title="@string/menu" />
+
+        <item
+            android:id="@+id/nav_cliente"
+            android:icon="@drawable/ic_cliente"
+            android:title="@string/txtcli" />
+
+        <item
+            android:id="@+id/nav_funcionario"
+            android:icon="@drawable/ic_funcionario"
+            android:title="@string/txtfuncionario" />
+
+        <item
+            android:id="@+id/nav_servicos"
+            android:icon="@drawable/ic_servicos"
+            android:title="@string/txtservicos" />
+
+        <item
+            android:id="@+id/nav_projeto"
+            android:icon="@drawable/ic_projeto"
+            android:title="@string/txtprojeto" />
+    </group>
+
+</menu>

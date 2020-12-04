@@ -21,7 +21,6 @@
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/roboto_thin"
             android:paddingStart="5dp"
-            android:text="@string/tema"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -34,7 +33,6 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/roboto_condensed_regular"
             android:paddingStart="5dp"
-            android:text="@string/teste"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/txttemaprincipalfirst"
@@ -67,7 +65,6 @@
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/roboto_thin"
             android:paddingEnd="5dp"
-            android:text="@string/tema2"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -80,7 +77,6 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/roboto_condensed_regular"
             android:paddingEnd="5dp"
-            android:text="@string/teste"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/txttemaprincipalsecond"

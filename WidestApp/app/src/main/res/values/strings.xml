@@ -9,7 +9,14 @@
     <string name="txtpendencias"> Pendências </string>
     <string name="teste"> Out Of Lens</string>
     <string name="tema"> Fotografia </string>
-    <string name="visualizarmais"> VISUALIZAR MAIS </string>
-    <string name="teste2"> WalkInPaws </string>
-    <string name="tema2"> Pet-Shop </string>
+    <string name="trabsanteriores"> Trabalhos Anteriores </string>
+    <string name="txtcli"> Cliente </string>
+    <string name="txtprojeto"> Projeto </string>
+    <string name="txtfuncionario"> Funcionário </string>
+    <string name="txtservicos"> Serviços </string>
+    <string name="testenome"> Pedro Tamas </string>
+    <string name="testeemail"> pedro.tamas@etec.sp.gov.br</string>
+    <string name="opendrawer">Open navigation drawer</string>
+    <string name="closedrawer">Close navigation drawer</string>
+    <string name="menu"> Página Inicial </string>
     </resources>

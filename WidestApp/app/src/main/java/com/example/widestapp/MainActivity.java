@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void deixarInvisivel()
     {
-        imgsenha.setImageResource(R.drawable.view);
+        imgsenha.setImageResource(R.drawable.visible);
         edtsenha.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 
     }
