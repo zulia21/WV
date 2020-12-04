@@ -2,20 +2,20 @@ package com.example.widestapp;
 
 public class SliderItem {
 
-    private final int imagem;
+    private final int image;
     private final String title;
-    private final String tema;
+    private final String subject;
 
 
-    SliderItem(int imagem, String  title, String tema) {
-        this.imagem = imagem;
+    SliderItem(int image, String  title, String subject) {
+        this.image = image;
         this.title = title;
-        this.tema = tema;
+        this.subject = subject;
     }
-    public int getImagem()
+    public int getImage()
     {
-        return imagem;
+        return image;
     }
     public String getTitle() { return title; }
-    public String getTema() { return tema; }
+    public String getSubject() { return subject; }
 }

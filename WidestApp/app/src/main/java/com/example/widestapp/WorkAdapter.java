@@ -15,25 +15,25 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class TrabAdapter extends RecyclerView.Adapter<TrabAdapter.TrabViewHolder> {
+public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.TrabViewHolder> {
 
     private final Context context;
-    private final List<TrabAnteriorItem> trabalhos;
+    private final List<Work> trabalhos;
 
-    public TrabAdapter(Context context, List<TrabAnteriorItem> trabalhos) {
+    public WorkAdapter(Context context, List<Work> trabalhos) {
         this.context = context;
         this.trabalhos = trabalhos;
     }
 
     @NonNull
     @Override
-    public TrabAdapter.TrabViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public WorkAdapter.TrabViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         return new TrabViewHolder(inflater.inflate(R.layout.trabalhos_anteriores_row, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TrabAdapter.TrabViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull WorkAdapter.TrabViewHolder holder, int position) {
 
         int times2 = position * 2;
 
@@ -72,7 +72,7 @@ public class TrabAdapter extends RecyclerView.Adapter<TrabAdapter.TrabViewHolder
             secondImage = itemView.findViewById(R.id.imgcapaprincipalsecond);
         }
 
-        public void bind(@NonNull TrabAnteriorItem model1, @Nullable TrabAnteriorItem model2) {
+        public void bind(@NonNull Work model1, @Nullable Work model2) {
 
             firstTitle.setText(model1.getNomeTrabalho());
             firstTema.setText(model1.getTemaTrabalho());

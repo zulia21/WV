@@ -8,14 +8,14 @@ import androidx.annotation.Nullable;
 
 import java.io.File;
 
-public class TrabAnteriorItem {
+public class Work {
     public final static String IMAGE_DIRECTORY = "trabalhos_images";
 
     private final String nomeTrabalho;
     private final String temaTrabalho;
     private final String imagemTrabalho;
 
-    TrabAnteriorItem(String nomeTrabalho, String temaTrabalho, String imagemTrabalho) {
+    Work(String nomeTrabalho, String temaTrabalho, String imagemTrabalho) {
         this.nomeTrabalho = nomeTrabalho;
         this.temaTrabalho = temaTrabalho;
         this.imagemTrabalho = imagemTrabalho;

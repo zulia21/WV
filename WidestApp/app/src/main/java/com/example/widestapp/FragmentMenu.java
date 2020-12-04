@@ -23,9 +23,9 @@ public class FragmentMenu extends Fragment {
 
     RecyclerView recyclerView;
 
-    TrabAdapter adapter;
+    WorkAdapter adapter;
 
-    List<TrabAnteriorItem> result = new ArrayList<>();
+    List<Work> result = new ArrayList<>();
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class FragmentMenu extends Fragment {
         sliderItems.add(new SliderItem(R.drawable.capaool, "Out Of Lens", "Fotografia"));
         sliderItems.add(new SliderItem(R.drawable.capapatolandia, "Patolândia", "Parque de Diversões"));
 
-        viewPager2.setAdapter(new com.example.widestapp.Adapter(sliderItems));
+        viewPager2.setAdapter(new SliderAdapter(sliderItems));
         viewPager2.setClipToPadding(false);
         viewPager2.setClipChildren(false);
         viewPager2.setOffscreenPageLimit(3);
@@ -46,13 +46,12 @@ public class FragmentMenu extends Fragment {
 
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(30));
-        compositePageTransformer.addTransformer((new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r  = 1 - Math.abs(position);
-                page.setScaleY(0.75f + r * 0.25f);
-            }
+
+        compositePageTransformer.addTransformer(((page, position) -> {
+            float r  = 1 - Math.abs(position);
+            page.setScaleY(0.75f + r * 0.25f);
         }));
+
         viewPager2.setPageTransformer(compositePageTransformer);
         // recyclerview
         recyclerView = view.findViewById(R.id.trab_anterior_recyclerview);
@@ -61,13 +60,13 @@ public class FragmentMenu extends Fragment {
                 + '/' + getResources().getResourceTypeName(resource) + '/'
                 + getResources().getResourceEntryName(resource));
 
-        result.add(new TrabAnteriorItem("Daydreamer Veg", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new TrabAnteriorItem("Car Good", "Automobilístico", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new TrabAnteriorItem("Sheriff's Açaí", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new TrabAnteriorItem("PetShow", "Animais", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new Work("Daydreamer Veg", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new Work("Car Good", "Automobilístico", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new Work("Sheriff's Açaí", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new Work("PetShow", "Animais", String.valueOf(uri.apply(R.drawable.back))));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new TrabAdapter(getContext(), result);
+        adapter = new WorkAdapter(getContext(), result);
         recyclerView.setAdapter(adapter);
 
         return view;

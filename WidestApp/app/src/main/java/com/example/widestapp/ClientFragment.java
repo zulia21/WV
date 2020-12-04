@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
-public class ClienteFragment extends Fragment {
+public class ClientFragment extends Fragment {
 
     @Nullable
     @Override

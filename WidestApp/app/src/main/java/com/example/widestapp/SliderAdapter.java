@@ -12,13 +12,13 @@ import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.SliderViewHolder> {
+public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderViewHolder> {
 
     private final List<SliderItem> sliderItems;
 
 
 
-    Adapter(List<SliderItem> sliderItems) {
+    SliderAdapter(List<SliderItem> sliderItems) {
         this.sliderItems = sliderItems;
     }
 
@@ -62,8 +62,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SliderViewHolder> {
         }
 
         void setDados(SliderItem sliderItem) {
-            imageView.setImageResource(sliderItem.getImagem());
-            txtTema.setText(sliderItem.getTema());
+            imageView.setImageResource(sliderItem.getImage());
+            txtTema.setText(sliderItem.getSubject());
             txtTitulo.setText(sliderItem.getTitle());
         }
 
