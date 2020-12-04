@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.fragment;
 
 import android.content.ContentResolver;
 import android.net.Uri;
@@ -16,16 +16,22 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.widestapp.R;
+import com.example.widestapp.adapter.SliderAdapter;
+import com.example.widestapp.adapter.WorkAdapter;
+import com.example.widestapp.model.SliderItem;
+import com.example.widestapp.model.PreviousWork;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentMenu extends Fragment {
+public class MenuFragment extends Fragment {
 
     RecyclerView recyclerView;
 
     WorkAdapter adapter;
 
-    List<Work> result = new ArrayList<>();
+    List<PreviousWork> result = new ArrayList<>();
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -60,10 +66,10 @@ public class FragmentMenu extends Fragment {
                 + '/' + getResources().getResourceTypeName(resource) + '/'
                 + getResources().getResourceEntryName(resource));
 
-        result.add(new Work("Daydreamer Veg", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new Work("Car Good", "Automobilístico", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new Work("Sheriff's Açaí", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
-        result.add(new Work("PetShow", "Animais", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new PreviousWork("Daydreamer Veg", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new PreviousWork("Car Good", "Automobilístico", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new PreviousWork("Sheriff's Açaí", "Alimentação", String.valueOf(uri.apply(R.drawable.back))));
+        result.add(new PreviousWork("PetShow", "Animais", String.valueOf(uri.apply(R.drawable.back))));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new WorkAdapter(getContext(), result);

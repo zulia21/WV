@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.widestapp.R;
+import com.example.widestapp.activity.MenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
     ImageView imgsenha;

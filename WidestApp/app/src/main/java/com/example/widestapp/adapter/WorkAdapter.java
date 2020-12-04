@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.adapter;
 
 import android.content.Context;
 import android.net.Uri;
@@ -13,14 +13,17 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.widestapp.R;
+import com.example.widestapp.model.PreviousWork;
+
 import java.util.List;
 
 public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.TrabViewHolder> {
 
     private final Context context;
-    private final List<Work> trabalhos;
+    private final List<PreviousWork> trabalhos;
 
-    public WorkAdapter(Context context, List<Work> trabalhos) {
+    public WorkAdapter(Context context, List<PreviousWork> trabalhos) {
         this.context = context;
         this.trabalhos = trabalhos;
     }
@@ -72,7 +75,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.TrabViewHolder
             secondImage = itemView.findViewById(R.id.imgcapaprincipalsecond);
         }
 
-        public void bind(@NonNull Work model1, @Nullable Work model2) {
+        public void bind(@NonNull PreviousWork model1, @Nullable PreviousWork model2) {
 
             firstTitle.setText(model1.getNomeTrabalho());
             firstTema.setText(model1.getTemaTrabalho());

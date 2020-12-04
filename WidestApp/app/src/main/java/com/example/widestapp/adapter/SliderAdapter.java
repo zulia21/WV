@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.widestapp.R;
+import com.example.widestapp.model.SliderItem;
 import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;
@@ -18,7 +20,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
 
 
 
-    SliderAdapter(List<SliderItem> sliderItems) {
+    public SliderAdapter(List<SliderItem> sliderItems) {
         this.sliderItems = sliderItems;
     }
 

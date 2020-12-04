@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.model;
 
 public class SliderItem {
 
@@ -7,7 +7,7 @@ public class SliderItem {
     private final String subject;
 
 
-    SliderItem(int image, String  title, String subject) {
+    public SliderItem(int image, String  title, String subject) {
         this.image = image;
         this.title = title;
         this.subject = subject;

@@ -1,4 +1,4 @@
-package com.example.widestapp;
+package com.example.widestapp.model;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,14 +8,14 @@ import androidx.annotation.Nullable;
 
 import java.io.File;
 
-public class Work {
+public class PreviousWork {
     public final static String IMAGE_DIRECTORY = "trabalhos_images";
 
     private final String nomeTrabalho;
     private final String temaTrabalho;
     private final String imagemTrabalho;
 
-    Work(String nomeTrabalho, String temaTrabalho, String imagemTrabalho) {
+    public PreviousWork(String nomeTrabalho, String temaTrabalho, String imagemTrabalho) {
         this.nomeTrabalho = nomeTrabalho;
         this.temaTrabalho = temaTrabalho;
         this.imagemTrabalho = imagemTrabalho;
