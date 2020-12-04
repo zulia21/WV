@@ -7,21 +7,19 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.SliderViewHolder> {
-    private List<SliderItem> slideritems;
-    private ViewPager2 viewPager2;
+
+    private final List<SliderItem> sliderItems;
 
 
-    Adapter(List<SliderItem> slideritems, ViewPager2 viewPager2) {
-        this.viewPager2 = viewPager2;
-        this.slideritems = slideritems;
 
+    Adapter(List<SliderItem> sliderItems) {
+        this.sliderItems = sliderItems;
     }
 
     @NonNull
@@ -38,23 +36,23 @@ public class Adapter extends RecyclerView.Adapter<Adapter.SliderViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull SliderViewHolder holder, int position) {
-        holder.setDados(slideritems.get(position));
+        holder.setDados(sliderItems.get(position));
 
 
     }
 
     @Override
     public int getItemCount() {
-        return slideritems.size();
+        return sliderItems.size();
     }
 
 
 
-    class SliderViewHolder extends RecyclerView.ViewHolder {
+    static class SliderViewHolder extends RecyclerView.ViewHolder {
 
-        private RoundedImageView imageView;
-        public TextView txtTema;
-        public TextView txtTitulo;
+        private final RoundedImageView imageView;
+        public final TextView txtTema;
+        public final TextView txtTitulo;
 
         SliderViewHolder(@NonNull View itemView)  {
             super(itemView);

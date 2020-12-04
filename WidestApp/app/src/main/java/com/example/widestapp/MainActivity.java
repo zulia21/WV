@@ -1,8 +1,5 @@
 package com.example.widestapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -10,8 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import java.util.ArrayList;
-import java.util.List;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imgsenha;
@@ -20,18 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edtsenha;
 
-    RecyclerView recyclerView;
-
-    TrabAdapter adapter;
-
-    List<Trab_Anterior_Item> result = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imgsenha = (ImageView) findViewById(R.id.imgsenha);
+        imgsenha = findViewById(R.id.imgsenha);
 
-        edtsenha = (EditText) findViewById(R.id.edtSenha);
+        edtsenha = findViewById(R.id.edtSenha);
 
 
 

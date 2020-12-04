@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,10 +17,10 @@ import java.util.List;
 
 public class TrabAdapter extends RecyclerView.Adapter<TrabAdapter.TrabViewHolder> {
 
-    private Context context;
-    private List<Trab_Anterior_Item> trabalhos;
+    private final Context context;
+    private final List<TrabAnteriorItem> trabalhos;
 
-    public TrabAdapter(Context context, List<Trab_Anterior_Item> trabalhos) {
+    public TrabAdapter(Context context, List<TrabAnteriorItem> trabalhos) {
         this.context = context;
         this.trabalhos = trabalhos;
     }
@@ -73,7 +72,7 @@ public class TrabAdapter extends RecyclerView.Adapter<TrabAdapter.TrabViewHolder
             secondImage = itemView.findViewById(R.id.imgcapaprincipalsecond);
         }
 
-        public void bind(@NonNull Trab_Anterior_Item model1, @Nullable Trab_Anterior_Item model2) {
+        public void bind(@NonNull TrabAnteriorItem model1, @Nullable TrabAnteriorItem model2) {
 
             firstTitle.setText(model1.getNomeTrabalho());
             firstTema.setText(model1.getTemaTrabalho());

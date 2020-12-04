@@ -1,9 +1,10 @@
 package com.example.widestapp;
 
 public class SliderItem {
-    final private int imagem;
-    final private String title;
-    final private String tema;
+
+    private final int imagem;
+    private final String title;
+    private final String tema;
 
 
     SliderItem(int imagem, String  title, String tema) {
