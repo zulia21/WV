@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imglogo6"
+        android:layout_width="136dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/desc_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_wv" />
+
+    <TextView
+        android:id="@+id/txthintnewclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/novo_cli"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglogo6" />
+
+    <TextView
+        android:id="@+id/txthintname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txthintcnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cnpj"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtcnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txthintendereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/endereco"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtendereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txthinttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/telefone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cadastro"
+        android:textColor="#222222" />
+
+</LinearLayout>

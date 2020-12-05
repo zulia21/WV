@@ -15,8 +15,22 @@
     <string name="txtfuncionario"> Funcionário </string>
     <string name="txtservicos"> Serviços </string>
     <string name="testenome"> Pedro Tamas </string>
+    <string name="descteste"> Desenvolvimento ASP.NET e Design</string>
     <string name="testeemail"> pedro.tamas@etec.sp.gov.br</string>
     <string name="opendrawer">Open navigation drawer</string>
     <string name="closedrawer">Close navigation drawer</string>
     <string name="menu"> Página Inicial </string>
-    </resources>
+    <string name="cadastro"> Cadastrar </string>
+    <string name="novo_cli"> Novo Cliente </string>
+    <string name="alterar"> Alterar </string>
+    <string name="consultar"> Consultar </string>
+    <string name="nome"> Nome </string>
+    <string name="cnpj"> CNPJ </string>
+    <string name="endereco"> Endereço </string>
+    <string name="telefone"> Telefone </string>
+    <string name="campo"> Escolha o campo </string>
+    <string name="escolhacliente"> Escolha o cliente </string>
+    <string name="alteracao"> Faça a alteração aqui  </string>
+    <string name="altercli"> Alterar cliente </string>
+    <string name="selectcli"> Consultar cliente</string>
+</resources>

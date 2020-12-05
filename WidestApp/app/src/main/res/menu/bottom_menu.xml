@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/add_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:title="@string/cadastro"
+        />
+    <item
+        android:id="@+id/change_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_change"
+        android:title="@string/alterar"
+        />
+    <item
+        android:id="@+id/select_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/consultar"
+        />
+    </group>
+
+</menu>

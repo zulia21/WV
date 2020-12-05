@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".activity.ProjectActivity">
+
+    <ImageView
+        android:id="@+id/imglogoproject"
+        android:layout_width="136dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/desc_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_wv" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/imglogoproject"
+        tools:layout_editor_absoluteX="184dp" />
+
+    <TextView
+        android:id="@+id/txttituloprojeto"
+        android:layout_width="208dp"
+        android:layout_height="149dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/teste"
+        android:textColor="#FFFFFF"
+        android:textSize="56sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerImageSlider" />
+
+    <TextView
+        android:id="@+id/txttemaprojeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tema"
+        android:textColor="#D9FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttituloprojeto" />
+
+    <TextView
+        android:id="@+id/txtdescprojeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/descteste"
+        android:textColor="#BFFFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttemaprojeto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
