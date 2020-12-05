@@ -33,4 +33,27 @@
     <string name="alteracao"> Faça a alteração aqui  </string>
     <string name="altercli"> Alterar cliente </string>
     <string name="selectcli"> Consultar cliente</string>
+    <string name="newprojeto"> Novo projeto </string>
+    <string name="temaprojeto"> Tema </string>
+    <string name="capaprojeto"> Capa </string>
+    <string name="fotoprojeto"> Algumas fotos </string>
+    <string name="codcli_project"> Código do cliente </string>
+    <string name="alterarprojeto"> Alterar projeto </string>
+    <string name="escolhaprojeto"> Escolha o projeto </string>
+    <string name="selectprojeto"> Consultar projeto </string>
+    <string name="clicorrespond"> Cliente correspondente </string>
+    <string name="valorservico"> Valor </string>
+    <string name="descservico"> Descrição </string>
+    <string name="ativoservico"> Ativo </string>
+    <string name="consultaservicos"> Consultar serviços  </string>
+    <string name="atualizarservicos"> Atualizar serviços </string>
+    <string name="escolhaserviços"> Escolha o serviço </string>
+    <string name="tituloservico"> Novo Serviço </string>
+    <string name="titulofuncionario"> Novo Funcionário </string>
+    <string name="emailfunc"> Email </string>
+    <string name="senhafunc"> Senha </string>
+    <string name="alterarfunc"> Alterar funcionário </string>
+    <string name="escolherfunc"> Escolher funcionário </string>
+    <string name="consultarfunc"> Consultar Funcionário </string>
+
 </resources>

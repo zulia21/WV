@@ -32,7 +32,6 @@ public class ClientFragment extends Fragment implements BottomNavigationView.OnN
         if (savedInstanceState == null)
         {
             getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_cli, new InsertClientFragment()).commit();
-            Menu item  = bottomNavigationView.getMenu();
             bottomNavigationView.setSelectedItemId(R.id.add_page);
         }
         return view;
@@ -41,6 +40,7 @@ public class ClientFragment extends Fragment implements BottomNavigationView.OnN
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         switch (item.getItemId())
         {
@@ -60,7 +60,6 @@ public class ClientFragment extends Fragment implements BottomNavigationView.OnN
                 transaction.commit();
                 break;
         }
-
         return true;
     }
 
