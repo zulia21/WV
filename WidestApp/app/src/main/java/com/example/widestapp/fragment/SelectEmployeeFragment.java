@@ -40,7 +40,7 @@ public class SelectEmployeeFragment extends Fragment implements AdapterView.OnIt
 
     ImageView fotoperfil;
 
-    List<Employee> employees ;
+    List<Employee> employees;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

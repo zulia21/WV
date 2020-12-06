@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerclienteproj3"
+        android:id="@+id/spinnerchooseemployee"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="140dp"
@@ -122,7 +122,7 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerclienteproj3" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerchooseemployee" />
 
     <ImageView
         android:id="@+id/imglogo4"

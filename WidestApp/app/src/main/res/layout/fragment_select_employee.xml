@@ -11,10 +11,11 @@
         android:layout_width="167dp"
         android:layout_height="166dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="264dp"
         android:src="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintfotoperfil"
         app:layout_constraintVertical_bias="0.0" />
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="216dp"
         android:fontFamily="@font/roboto"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
@@ -34,22 +35,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo7"
         app:layout_constraintVertical_bias="0.444" />
-
-    <TextView
-        android:id="@+id/txthintcargoemployee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="152dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/cargofunc"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintname7" />
 
     <TextView
         android:id="@+id/txthintemailemployee"
@@ -65,31 +50,46 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintcargoemployee"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <Switch
         android:id="@+id/switchemployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="100dp"
         android:editable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/txthintcargoemployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cargofunc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthintname7" />
+
+    <TextView
         android:id="@+id/txthintnewclient4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="576dp"
+        android:layout_marginBottom="592dp"
         android:fontFamily="@font/roboto"
         android:text="@string/consultarfunc"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo5"
         app:layout_constraintVertical_bias="0.092" />
@@ -99,7 +99,7 @@
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginBottom="464dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -111,14 +111,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:layout_marginBottom="484dp"
+        android:layout_marginBottom="512dp"
         android:fontFamily="@font/roboto"
         android:text="@string/escolherfunc"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintupdatecliente2" />
 
