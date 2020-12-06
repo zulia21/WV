@@ -16,30 +16,27 @@ import com.example.widestapp.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UpdateEmployeeFragment extends Fragment {
+public class SelectContractFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_update_employee, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_select_contract, container, false);
+        
         List<String> spinnerArray = new ArrayList<String>();
         spinnerArray.add("");
         spinnerArray.add("Nome");
-        spinnerArray.add("Codigo");
-        spinnerArray.add("Ativo");
-        spinnerArray.add("Email");
-        spinnerArray.add("Cargo");
-        spinnerArray.add("Foto de Perfil");
+        spinnerArray.add("Descrição");
+        spinnerArray.add("Valor");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 getContext(), android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Spinner spinner = view.findViewById(R.id.spinnerupdatecampoemployee);
+        Spinner spinner = view.findViewById(R.id.spinnerselectcontract);
         spinner.setAdapter(adapter);
         
         return view;
     }
-    public static UpdateEmployeeFragment newInstance() {
-        return new UpdateEmployeeFragment();
+    public static SelectContractFragment newInstance(){
+        return new SelectContractFragment();
     }
 }

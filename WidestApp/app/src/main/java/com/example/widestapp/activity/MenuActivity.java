@@ -10,6 +10,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.widestapp.fragment.ContractFragment;
 import com.example.widestapp.fragment.MenuFragment;
 import com.example.widestapp.R;
 import com.example.widestapp.fragment.ClientFragment;
@@ -72,6 +73,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         map.put(R.id.nav_employee, new EmployeeFragment());
         map.put(R.id.nav_services, new ServicesFragment());
         map.put(R.id.nav_project, new ProjectFragment());
+        map.put(R.id.nav_contract, new ContractFragment());
 
         Fragment fragment = map.get(item.getItemId());
 

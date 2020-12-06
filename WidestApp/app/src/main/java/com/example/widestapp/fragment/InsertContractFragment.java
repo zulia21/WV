@@ -11,15 +11,15 @@ import androidx.fragment.app.Fragment;
 
 import com.example.widestapp.R;
 
-public class InsertClientFragment extends Fragment {
+public class InsertContractFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_insert_cli, container, false);
+        View view = inflater.inflate(R.layout.fragment_insert_contract, container, false);
         return view;
     }
-    public static InsertClientFragment newInstance() {
-        return new InsertClientFragment();
+    public static InsertContractFragment newInstance()
+    {
+        return new InsertContractFragment();
     }
-    
 }

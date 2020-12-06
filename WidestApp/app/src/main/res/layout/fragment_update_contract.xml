@@ -7,17 +7,17 @@
     android:background="#222222">
 
     <View
-        android:id="@+id/divider3"
+        android:id="@+id/divider4"
         android:layout_width="311dp"
         android:layout_height="4dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnewclient3" />
+        app:layout_constraintTop_toBottomOf="@+id/txthintnewclient5" />
 
     <TextView
-        android:id="@+id/txtescolhacampo4"
+        android:id="@+id/txtescolhacampo5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="208dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnalterarproj2"
+        android:id="@+id/btnalterarproj3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtcampoalterado" />
 
     <Spinner
-        android:id="@+id/spinnerupdatecampoemployee"
+        android:id="@+id/spinnerupdatecampocontract"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
@@ -58,12 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/txtescolhacampo" />
 
     <TextView
-        android:id="@+id/txtescolhacli4"
+        android:id="@+id/txtescolhacli5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="328dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/escolherfunc"
+        android:text="@string/escolhercontrato"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerclienteproj3"
+        android:id="@+id/spinnercontractchoose"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="140dp"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtescolhacampo" />
 
     <EditText
-        android:id="@+id/edtcampoalteradop3"
+        android:id="@+id/edtcampoalteradop4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
@@ -99,33 +99,24 @@
         app:layout_constraintVertical_bias="0.177" />
 
     <TextView
-        android:id="@+id/txthintnewclient3"
+        android:id="@+id/txthintnewclient5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="624dp"
+        android:layout_marginBottom="588dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/alterarfunc"
+        android:text="@string/alterarcontrato"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo5"
         app:layout_constraintVertical_bias="0.092" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/back"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerclienteproj3" />
-
     <ImageView
-        android:id="@+id/imglogo4"
+        android:id="@+id/imglogo16"
         android:layout_width="136dp"
         android:layout_height="75dp"
         android:layout_gravity="center"

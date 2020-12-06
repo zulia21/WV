@@ -26,6 +26,12 @@
             android:id="@+id/nav_project"
             android:icon="@drawable/ic_projeto"
             android:title="@string/txtprojeto" />
+
+        <item
+            android:id="@+id/nav_contract"
+            android:icon="@drawable/ic_contrato"
+            android:title="@string/contrato"
+            />
     </group>
 
 </menu>

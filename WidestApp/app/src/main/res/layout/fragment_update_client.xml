@@ -6,18 +6,27 @@
     android:layout_height="match_parent"
     android:background="#222222">
 
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="311dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthintupdatecliente" />
+
     <TextView
         android:id="@+id/txthintupdatecliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/roboto"
         android:text="@string/altercli"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo" />
 
@@ -36,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnercampo"
+        android:id="@+id/spinnerupdatecampoclient"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
@@ -101,9 +110,9 @@
         android:layout_width="136dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
         android:contentDescription="@string/desc_img"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_wv" />

@@ -6,139 +6,192 @@
     android:layout_height="match_parent"
     android:background="#222222">
 
+    <TextView
+        android:id="@+id/txthintfotoperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="184dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/fotofunc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/swtativo"
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertsenhaemployee"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgfotoperfilinsertemployee"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="96dp"
+        android:onClick="pegarCaminhoFoto"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/switch3"
+        app:layout_constraintTop_toBottomOf="@+id/txthintfotoperfil"
+        app:layout_constraintVertical_bias="0.066" />
+
     <Button
-        android:id="@+id/btncadastrar3"
+        android:id="@+id/btninsertemployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="92dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/roboto"
+        android:onClick="inserirFuncionario"
         android:text="@string/cadastro"
         android:textColor="#222222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txthintnamep5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/descservico"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep3" />
+        app:layout_constraintTop_toBottomOf="@+id/switch3" />
 
     <TextView
-        android:id="@+id/txthintnamep6"
+        android:id="@+id/txthinttelefone4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/ativoservico"
+        android:text="@string/senhafunc"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep4" />
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertemailemployee" />
 
     <EditText
-        android:id="@+id/edtnamep4"
+        android:id="@+id/edtinsertsenhaemployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="196dp"
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep5" />
+        app:layout_constraintTop_toBottomOf="@+id/txthinttelefone2" />
 
     <TextView
-        android:id="@+id/txthintnamep4"
+        android:id="@+id/txthinttelefone3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/valorservico"
+        android:text="@string/emailfunc"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertcargoemployee" />
 
     <EditText
-        android:id="@+id/edtnamep3"
+        android:id="@+id/edtinsertemailemployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthinttelefone2" />
+
+    <TextView
+        android:id="@+id/txthinttelefone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cargofunc"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertnameemployee" />
+
+    <EditText
+        android:id="@+id/edtinsertcargoemployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep4" />
+        app:layout_constraintTop_toBottomOf="@+id/txthinttelefone2" />
 
     <TextView
-        android:id="@+id/txthintnamep3"
+        android:id="@+id/txthintnamep10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
         android:fontFamily="@font/roboto"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnewproject2" />
+        app:layout_constraintTop_toBottomOf="@+id/txthintnewproject5"
+        app:layout_constraintVertical_bias="0.025" />
 
     <EditText
-        android:id="@+id/edtnamep2"
+        android:id="@+id/edtinsertnameemployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="340dp"
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txthintnamep3" />
+        app:layout_constraintTop_toBottomOf="@+id/txthintnamep10"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txthintnewproject2"
+        android:id="@+id/txthintnewproject5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="600dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/tituloservico"
+        android:text="@string/titulofuncionario"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo6" />
 
     <ImageView
-        android:id="@+id/imglogo3"
+        android:id="@+id/imglogo12"
         android:layout_width="136dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
@@ -150,11 +203,16 @@
         app:srcCompat="@drawable/logo_wv" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swtativo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/ativoservico"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep6" />
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

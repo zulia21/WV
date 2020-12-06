@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/back"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnalterarproj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclienteproj3" />
 
     <TextView
         android:id="@+id/txtescolhacampo2"
@@ -35,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtcampoalterado" />
 
     <Spinner
-        android:id="@+id/spinnercampoproj"
+        android:id="@+id/spinnerupdatecampoproj"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
@@ -61,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerclienteproj"
+        android:id="@+id/spinnerprojetochoose"
         android:layout_width="200dp"
         android:layout_height="39dp"
         android:layout_marginTop="140dp"
@@ -113,5 +127,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo5"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.062" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="311dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthintnewclient2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

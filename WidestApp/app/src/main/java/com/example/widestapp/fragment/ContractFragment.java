@@ -1,10 +1,7 @@
 package com.example.widestapp.fragment;
 
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,55 +14,43 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.widestapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.HashMap;
-
-
-public class ClientFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener{
-
+public class ContractFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view  = inflater.inflate(R.layout.fragment_client, container, false);
-        BottomNavigationView bottomNavigationView = view.findViewById(R.id.bottom_nav);
-
+        View view = inflater.inflate(R.layout.fragment_contract, container, false);
+        BottomNavigationView bottomNavigationView = view.findViewById(R.id.bottom_nav_contract);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-
         if (savedInstanceState == null)
         {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_cli, new InsertClientFragment()).commit();
-            bottomNavigationView.setSelectedItemId(R.id.add_page);
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_contract, new InsertContractFragment()).commit();
         }
-
         return view;
     }
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-
         switch (item.getItemId())
         {
             case R.id.add_page:
-                Fragment insertcli =  InsertClientFragment.newInstance();
-                transaction.replace(R.id.fragment_container_cli, insertcli);
+                Fragment insertcontract = InsertContractFragment.newInstance();
+                transaction.replace(R.id.fragment_container_contract, insertcontract);
                 transaction.commit();
                 break;
 
             case R.id.change_page:
-                Fragment updatecli =  UpdateClientFragment.newInstance();
-                transaction.replace(R.id.fragment_container_cli, updatecli);
+                Fragment updatecontract = UpdateContractFragment.newInstance();
+                transaction.replace(R.id.fragment_container_contract, updatecontract);
+                transaction.commit();
+                break;
+            case R.id.select_page:
+                Fragment selectcontract = SelectContractFragment.newInstance();
+                transaction.replace(R.id.fragment_container_contract, selectcontract);
                 transaction.commit();
                 break;
 
-            case R.id.select_page:
-                Fragment selectcli = SelectCliFragment.newInstance();
-                transaction.replace(R.id.fragment_container_cli, selectcli);
-                transaction.commit();
-                break;
         }
         return true;
     }
-
 }
