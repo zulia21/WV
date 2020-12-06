@@ -21,43 +21,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgfoto2" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgfoto4"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="204dp"
-        android:src="@drawable/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintfotos" />
+        app:layout_constraintTop_toBottomOf="@+id/imgfotosproject" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circlecapa3"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="115dp"
+        android:layout_height="102dp"
         android:layout_gravity="center"
-        android:layout_marginTop="24dp"
         android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/txtcodcli2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthinttemap2" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerselectproj"
+        app:layout_constraintVertical_bias="0.415" />
 
     <TextView
         android:id="@+id/txthinttemap2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
         android:text="@string/temaprojeto"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintnamep2" />
 
@@ -70,12 +60,13 @@
         android:fontFamily="@font/roboto"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerselectproj"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.617" />
 
     <Spinner
         android:id="@+id/spinnerselectproj"

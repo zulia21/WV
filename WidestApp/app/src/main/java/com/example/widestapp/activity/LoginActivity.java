@@ -6,12 +6,12 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.widestapp.R;
 
+import com.example.widestapp.model.Database;
 import com.example.widestapp.model.Employee;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
 
     Boolean olhoRiscado = false;
 
+    public static final String EMAIL = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,12 @@ public class LoginActivity extends AppCompatActivity {
 
         email = findViewById(R.id.edtEmail);
         senha = findViewById(R.id.edtSenha);
+
+
+
+        WidestDB wv = new WidestDB(this);
+        wv.onCreate(Database.openFrom(this));
+
 
 
     }
@@ -70,6 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                 Employee.authenticate(Email, Senha, this);
 
                Intent intent = new Intent(this, MenuActivity.class);
+               intent.putExtra(EMAIL, Email);
                startActivity(intent);
                email.getText().clear();
                senha.getText().clear();

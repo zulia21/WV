@@ -41,6 +41,7 @@ public class SelectEmployeeFragment extends Fragment implements AdapterView.OnIt
     ImageView fotoperfil;
 
     List<Employee> employees;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -48,6 +49,7 @@ public class SelectEmployeeFragment extends Fragment implements AdapterView.OnIt
 
 
         employees = Employee.select(getContext());
+
         nome = view.findViewById(R.id.txthintnameemployee);
         cargo = view.findViewById(R.id.txthintcargoemployee);
         email = view.findViewById(R.id.txthintemailemployee);

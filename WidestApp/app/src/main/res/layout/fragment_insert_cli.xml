@@ -46,7 +46,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/edtname"
+        android:id="@+id/edtnameinsertcli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -67,7 +67,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/edtcnpj"
+        android:id="@+id/edtcnpjinsertcli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -88,7 +88,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/edtendereco"
+        android:id="@+id/edtenderecoinsertcli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -109,7 +109,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/edttelefone"
+        android:id="@+id/edttelefoneinsertcli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -119,13 +119,14 @@
         android:inputType="phone" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btncadastrarcli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/roboto"
+        android:onClick="insertCli"
         android:text="@string/cadastro"
         android:textColor="#222222" />
 
