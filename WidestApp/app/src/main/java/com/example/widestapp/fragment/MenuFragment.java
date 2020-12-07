@@ -57,7 +57,7 @@ public class MenuFragment extends Fragment {
                 continue;
             }
 
-            if (date.compareTo(new Date()) < 0) {
+            if (date.compareTo(new Date()) > 0) {
 
                 viewPagerItems.add(new SliderItem(Uri.parse(project.getCapa()), project.getName(), project.getTema()));
             }

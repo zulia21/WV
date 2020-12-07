@@ -103,9 +103,9 @@ public class Project {
 
     @SuppressLint("SimpleDateFormat")
     public Date getDataObject() throws ParseException {
-        
-          Date date = new SimpleDateFormat("dd/MM/yyyy").parse(getData());
-          
+
+          Date date = new SimpleDateFormat("dd/MM/yyyy").parse(data);
+
           return date;
     }
 
