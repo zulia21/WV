@@ -36,7 +36,7 @@
     <string name="newprojeto"> Novo Projeto </string>
     <string name="temaprojeto"> Tema </string>
     <string name="capaprojeto"> Capa </string>
-    <string name="fotoprojeto"> Algumas fotos </string>
+    <string name="fotoprojeto"> Selecionar fotos </string>
     <string name="codcli_project"> Código do cliente </string>
     <string name="alterarprojeto"> Alterar Projeto </string>
     <string name="escolhaprojeto"> Escolha o Projeto </string>
@@ -70,6 +70,11 @@
     <string name="nomeempresa"> WIDESTAPP </string>
     <string name="enderecoempresa"> Endereco: Rua Vergueiro, 2016 - Vila Mariana </string>
     <string name="distancia"> Distância da localização:  </string>
+    <string name="servicocorresp"> Serviço correspondente </string>
+    <string name="funcio"> Funcionário correspondente </string>
+    <string name="ligacao"> Ligação funcionário projeto </string>
+    <string name="ligarcom"> <u>Realizar união</u> </string>
+    <string name="relatorio"> Relatório </string>
 
 
 </resources>

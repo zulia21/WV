@@ -24,6 +24,7 @@ import com.example.widestapp.R;
 import com.example.widestapp.fragment.ClientFragment;
 import com.example.widestapp.fragment.EmployeeFragment;
 import com.example.widestapp.fragment.ProjectFragment;
+import com.example.widestapp.fragment.ReportFragment;
 import com.example.widestapp.fragment.ServicesFragment;
 import com.example.widestapp.model.Database;
 import com.example.widestapp.model.Employee;
@@ -117,6 +118,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         map.put(R.id.nav_services, new ServicesFragment());
         map.put(R.id.nav_project, new ProjectFragment());
         map.put(R.id.nav_contract, new ContractFragment());
+        map.put(R.id.nav_report, new ReportFragment());
         map.put(R.id.nav_about, new AboutFragment());
 
         Fragment fragment = map.get(item.getItemId());

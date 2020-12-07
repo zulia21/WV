@@ -14,7 +14,8 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.widestapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ProjectFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class ProjectFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener,
+InsertProjectFragment.onFragmentChange{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -23,7 +24,10 @@ public class ProjectFragment extends Fragment implements BottomNavigationView.On
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         if (savedInstanceState == null)
         {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_project, new InsertProjectFragment()).commit();
+            InsertProjectFragment fragment = new InsertProjectFragment();
+            fragment.setChangeListener(this);
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_project, fragment).commit();
+
         }
         return view;
     }
@@ -34,7 +38,8 @@ public class ProjectFragment extends Fragment implements BottomNavigationView.On
         switch (item.getItemId())
         {
             case R.id.add_page:
-                Fragment insertproject =  InsertProjectFragment.newInstance();
+                InsertProjectFragment insertproject =  InsertProjectFragment.newInstance();
+                insertproject.setChangeListener(this);
                 transaction.replace(R.id.fragment_container_project, insertproject);
                 transaction.commit();
                 break;
@@ -50,5 +55,14 @@ public class ProjectFragment extends Fragment implements BottomNavigationView.On
                 break;
         }
        return true;
+    }
+
+    @Override
+    public void onChange() {
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        Fragment assocInsert = InsertAssoc.newInstance();
+        transaction.replace(R.id.fragment_container_project, assocInsert);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

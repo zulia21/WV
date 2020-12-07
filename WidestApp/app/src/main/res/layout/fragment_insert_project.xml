@@ -7,6 +7,16 @@
     android:background="#222222"
     android:orientation="vertical">
 
+    <FrameLayout
+        android:id="@+id/fragment_container_insert_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/edtdataentrega"
         android:layout_width="wrap_content"
@@ -17,6 +27,7 @@
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
         android:inputType="date"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthinttemap" />
@@ -128,7 +139,7 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toEndOf="@+id/txthintcapa"
         app:layout_constraintTop_toBottomOf="@+id/spinnercliinsertproject" />
 
@@ -168,6 +179,7 @@
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintnamep" />
@@ -195,6 +207,7 @@
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
         android:inputType="text"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthinttemap" />
@@ -226,5 +239,19 @@
         app:layout_constraintBottom_toTopOf="@+id/edtdataentrega"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintcapa" />
+
+    <TextView
+        android:id="@+id/txtassoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto"
+        android:onClick="unir"
+        android:text="@string/ligarcom"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtdataentrega" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

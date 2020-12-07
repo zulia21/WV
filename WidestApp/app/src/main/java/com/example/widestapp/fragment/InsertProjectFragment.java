@@ -19,6 +19,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.widestapp.R;
 import com.example.widestapp.model.Client;
@@ -38,6 +39,8 @@ import static android.app.Activity.RESULT_OK;
 
 public class InsertProjectFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
+    private onFragmentChange changeListener;
+
     private final static String CAPA_PRE = "capa_pre";
 
     private final static String FOTOS_PRE = "fotos_pre";
@@ -46,6 +49,8 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
     List<Client> clients;
 
     EditText nome, tema, data;
+
+    TextView uniao;
 
     Button cadastrarProj, adicionar;
 
@@ -64,6 +69,8 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
         nome = view.findViewById(R.id.edtnameinsertproject);
         tema = view.findViewById(R.id.edttemainsertproject);
         data = view.findViewById(R.id.edtdataentrega);
+
+        uniao = view.findViewById(R.id.txtassoc);
 
         cadastrarProj = view.findViewById(R.id.btncadastrarproj);
         cadastrarProj.setOnClickListener(this::inserirProjeto);
@@ -260,6 +267,9 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
     public void salvarImagem(View view){
         try {
             salvarFotos(urifotos);
+            uniao.setVisibility(TextView.VISIBLE);
+            uniao.setOnClickListener(this::unir);
+
         }
         catch (IOException e)
         {
@@ -269,6 +279,20 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
 
     }
 
+    public void unir (View view)
+    {
+       this.changeListener.onChange();
+    }
+
+    public void setChangeListener(onFragmentChange changeListener) {
+        this.changeListener = changeListener;
+    }
+
+    public static interface onFragmentChange{
+
+        public void onChange();
+
+    }
 
 
     @Override

@@ -69,7 +69,7 @@ public class Client {
         wv.onCreate(database);
         database.insertOrThrow("Cliente", null, values);
     }
-    public static List<Client> select (@NonNull Context context)
+    public static List<Client> select (Context context)
     {
         SQLiteDatabase wv = Database.openFrom(context);
         Cursor cursor = wv.rawQuery("SELECT * FROM Cliente", null);

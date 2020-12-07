@@ -1,6 +1,14 @@
 package com.example.widestapp.model;
 
+import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.example.widestapp.activity.WidestDB;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Contract {
     private final Integer id;
@@ -28,5 +36,63 @@ public class Contract {
         this.idProj = cursor.getInt(4);
         this.valor = cursor.getDouble(5);
         this.idServico = cursor.getInt(6);
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Integer getIdCli() {
+        return idCli;
+    }
+
+    public Integer getIdProj() {
+        return idProj;
+    }
+
+    public Integer getIdServico() {
+        return idServico;
+    }
+    public void insert(Context context)
+    {
+        SQLiteDatabase database = Database.openFrom(context);
+        ContentValues values = new ContentValues();
+        values.put("Nome",name);
+        values.put("CodCli", idCli);
+        values.put("Descricao", descricao);
+        values.put("CodProj", idProj);
+        values.put("Valor", valor);
+        values.put("CodServico", idServico);
+        WidestDB wv = new WidestDB(context);
+        wv.onCreate(database);
+        database.insertOrThrow("Contrato",null, values);
+    }
+
+    public List<Contract> select(Context context)
+    {
+        SQLiteDatabase wv = Database.openFrom(context);
+        Cursor cursor = wv.rawQuery("SELECT * FROM Contrato", null);
+        List<Contract> contracts = new ArrayList<>();
+        while (cursor.moveToNext())
+        {
+            Contract contract = new Contract(cursor);
+            contracts.add(contract);
+
+        }
+
+        cursor.close();
+        return contracts;
     }
 }
