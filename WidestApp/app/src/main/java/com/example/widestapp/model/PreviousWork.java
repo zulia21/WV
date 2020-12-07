@@ -35,15 +35,7 @@ public class PreviousWork {
 
     @Nullable
     public Uri getImageURI(@NonNull Context context) {
-        File directory = new File(context.getFilesDir(), IMAGE_DIRECTORY);
-
-        File file = new File(directory, getImagemTrabalho());
-
-        if (!directory.exists() || !file.exists()) {
-            return null;
-        } else {
-            return Uri.fromFile(file);
-        }
+        return Uri.parse(this.imagemTrabalho);
     }
 
 }

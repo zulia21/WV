@@ -7,7 +7,7 @@
     android:background="#222222">
 
     <Button
-        android:id="@+id/btncadastrar3"
+        android:id="@+id/btncadastrarservico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -33,7 +33,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep3" />
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertvalorservices" />
 
     <TextView
         android:id="@+id/txthintnamep6"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep4" />
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertdescservices" />
 
     <EditText
-        android:id="@+id/edtnamep4"
+        android:id="@+id/edtinsertdescservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -59,7 +59,7 @@
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txthintnamep5" />
@@ -77,10 +77,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtinsertnameservices" />
 
     <EditText
-        android:id="@+id/edtnamep3"
+        android:id="@+id/edtinsertvalorservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txthintnewproject2" />
 
     <EditText
-        android:id="@+id/edtnamep2"
+        android:id="@+id/edtinsertnameservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -150,7 +150,7 @@
         app:srcCompat="@drawable/logo_wv" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swtativoservice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

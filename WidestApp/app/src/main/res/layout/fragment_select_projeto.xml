@@ -6,67 +6,63 @@
     android:layout_height="match_parent"
     android:background="#222222">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgcapaproj"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerselectproj"
+        app:layout_constraintVertical_bias="0.244" />
+
     <TextView
-        android:id="@+id/txtcodcli2"
+        android:id="@+id/txtclicorrespondselectproject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="156dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="136dp"
+        android:fontFamily="@font/roboto_condensed_regular"
         android:text="@string/clicorrespond"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgfotosproject" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circlecapa3"
-        android:layout_width="115dp"
-        android:layout_height="102dp"
-        android:layout_gravity="center"
-        android:src="@drawable/back"
-        app:layout_constraintBottom_toTopOf="@+id/txtcodcli2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerselectproj"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintTop_toBottomOf="@+id/txthintselecttemaproject"
+        app:layout_constraintVertical_bias="0.25" />
 
     <TextView
-        android:id="@+id/txthinttemap2"
+        android:id="@+id/txthintselectnameproject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/nome"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcapaproj" />
+
+    <TextView
+        android:id="@+id/txthintselecttemaproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_thin"
         android:text="@string/temaprojeto"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep2" />
-
-    <TextView
-        android:id="@+id/txthintnamep2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="296dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/nome"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.334"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerselectproj"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintTop_toBottomOf="@+id/txthintselectnameproject" />
 
     <Spinner
         android:id="@+id/spinnerselectproj"
@@ -123,4 +119,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_wv" />
+
+    <TextView
+        android:id="@+id/txthintdataselectproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_thin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtclicorrespondselectproject" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     android:background="#222222">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btncadastrarcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -34,11 +34,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner6"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerprojcorresp"
         app:layout_constraintVertical_bias="0.081" />
 
     <EditText
-        android:id="@+id/edtnamep8"
+        android:id="@+id/edtvalorinsertcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -63,14 +63,14 @@
         android:text="@string/projetocorrespod"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner6"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerprojcorresp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep7"
+        app:layout_constraintTop_toBottomOf="@+id/edtdescinsertcontract"
         app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
-        android:id="@+id/spinner6"
+        android:id="@+id/spinnerprojcorresp"
         android:layout_width="167dp"
         android:layout_height="25dp"
         android:layout_marginTop="172dp"
@@ -92,11 +92,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner5"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerclicorresp"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/edtnamep7"
+        android:id="@+id/edtdescinsertcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -141,10 +141,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtnamep6" />
+        app:layout_constraintTop_toBottomOf="@+id/edtnameinsertcontract" />
 
     <EditText
-        android:id="@+id/edtnamep6"
+        android:id="@+id/edtnameinsertcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -189,7 +189,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imglogo6" />
 
     <Spinner
-        android:id="@+id/spinner5"
+        android:id="@+id/spinnerclicorresp"
         android:layout_width="167dp"
         android:layout_height="25dp"
         app:layout_constraintEnd_toEndOf="parent"

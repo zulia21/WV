@@ -65,6 +65,11 @@
     <string name="datapreventrega"> Data </string>
     <string name="adicionarfoto"> Adicionar </string>
     <string name="cargofunc"> Cargo </string>
+    <string name="sobre"> Sobre </string>
+    <string name="versao"> Versão 1.0 </string>
+    <string name="nomeempresa"> WIDESTAPP </string>
+    <string name="enderecoempresa"> Endereco: Rua Vergueiro, 2016 - Vila Mariana </string>
+    <string name="distancia"> Distância da localização:  </string>
 
 
 </resources>

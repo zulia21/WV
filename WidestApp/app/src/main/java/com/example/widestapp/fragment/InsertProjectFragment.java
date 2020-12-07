@@ -215,6 +215,9 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
                         String.valueOf(urifotos),
                         id
                 ).insert(getContext());
+        Snackbar.make(getActivity().findViewById(android.R.id.content), "Imagem cadastrada com sucesso", Snackbar.LENGTH_LONG)
+                .show();
+
 
     }
 
@@ -247,6 +250,10 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
 
         adicionar.setEnabled(true);
         adicionar.setOnClickListener(this::salvarImagem);
+
+        Snackbar.make(getActivity().findViewById(android.R.id.content), "Projeto cadastrado com sucesso", Snackbar.LENGTH_LONG)
+                .show();
+
 
     }
 

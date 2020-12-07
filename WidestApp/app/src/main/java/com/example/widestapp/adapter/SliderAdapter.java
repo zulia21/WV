@@ -64,7 +64,7 @@ public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.SliderView
         }
 
         void setDados(SliderItem sliderItem) {
-            imageView.setImageResource(sliderItem.getImage());
+            imageView.setImageURI(sliderItem.getImage());
             txtTema.setText(sliderItem.getSubject());
             txtTitulo.setText(sliderItem.getTitle());
         }

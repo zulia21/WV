@@ -1,72 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222">
 
     <TextView
-        android:id="@+id/txthintnamep7"
+        android:id="@+id/txthintselectnameservico"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="368dp"
-        android:fontFamily="@font/roboto"
+        android:layout_height="44dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnewproject2" />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep9"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerselectservices" />
 
     <TextView
-        android:id="@+id/txthintnamep9"
+        android:id="@+id/txthintselectdescricaoservico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/descservico"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep8"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintEnd_toEndOf="@+id/txthintselectnameservico"
+        app:layout_constraintTop_toBottomOf="@+id/txthintselectnameservico" />
 
     <TextView
-        android:id="@+id/txthintnamep8"
+        android:id="@+id/txthintselectvalorservico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_thin"
         android:text="@string/valorservico"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep7"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintEnd_toEndOf="@+id/swtativoservico"
+        app:layout_constraintTop_toBottomOf="@+id/swtativoservico" />
+
+    <Switch
+        android:id="@+id/swtativoservico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/txthintselectdescricaoservico"
+        app:layout_constraintTop_toBottomOf="@+id/txthintselectdescricaoservico" />
 
     <TextView
         android:id="@+id/textView"
@@ -122,4 +108,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_wv" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
