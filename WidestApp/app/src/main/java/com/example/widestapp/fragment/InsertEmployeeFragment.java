@@ -159,6 +159,7 @@ public class InsertEmployeeFragment extends Fragment {
             return;
         }
 
+
         if (ativo.isChecked())
         {
             valorSwitch = true;

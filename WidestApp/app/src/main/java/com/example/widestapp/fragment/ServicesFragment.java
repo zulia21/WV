@@ -40,11 +40,7 @@ public class ServicesFragment extends Fragment implements BottomNavigationView.O
                 transaction.replace(R.id.fragment_container_services, addserv);
                 transaction.commit();
                 break;
-            case R.id.change_page:
-                Fragment alterarserv =  UpdateServicesFragment.newInstance();
-                transaction.replace(R.id.fragment_container_services, alterarserv);
-                transaction.commit();
-                break;
+
             case R.id.select_page:
                 Fragment selectserv =  SelectServicesFragment.newInstance();
                 transaction.replace(R.id.fragment_container_services, selectserv);

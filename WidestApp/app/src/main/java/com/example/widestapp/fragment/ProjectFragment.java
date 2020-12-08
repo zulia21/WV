@@ -43,11 +43,6 @@ InsertProjectFragment.onFragmentChange{
                 transaction.replace(R.id.fragment_container_project, insertproject);
                 transaction.commit();
                 break;
-            case R.id.change_page:
-                Fragment alterproject = UpdateProjectFragment.newInstance();
-                transaction.replace(R.id.fragment_container_project, alterproject);
-                transaction.commit();
-                break;
             case R.id.select_page:
                 Fragment selectproject =  SelectProjectFragment.newInstance();
                 transaction.replace(R.id.fragment_container_project, selectproject);

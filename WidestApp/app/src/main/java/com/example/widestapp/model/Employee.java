@@ -131,4 +131,22 @@ public class Employee {
 
 
 
+    public void update(Context context)
+    {
+        SQLiteDatabase database = Database.openFrom(context);
+
+        ContentValues values = new ContentValues();
+        values.put("Nome", name);
+        values.put("Ativo", active);
+        values.put("Senha", password);
+        values.put("Email", email);
+        values.put("Cargo", function);
+        values.put("RecursoImagem", imageName);
+
+        WidestDB wv = new WidestDB(context);
+        wv.onCreate(database);
+        database.update("Funcionario", values, "COD" + " = ?", new String[]{String.valueOf(id)});
+    }
+
+
 }

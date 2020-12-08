@@ -80,6 +80,9 @@
     <string name="proproj"><justify>Projeto Relacionado </justify>  </string>
     <string name="consultarelatorio"> Consulta de Relatório </string>
     <string name="selecionerelatorio"> Selecione um relatório </string>
+    <string name="intentmap"><u>Endereco para o mapa </u> </string>
+    <string name="funcionario"> Funcionários: </string>
+
 
 
 </resources>

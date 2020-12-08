@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/txthintnamep15"
+        android:id="@+id/txtnomeselectcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -74,11 +74,11 @@
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:importantForAutofill="no"
-        android:inputType="textPersonName"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/txthintnamep14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep15"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomeselectcontract"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

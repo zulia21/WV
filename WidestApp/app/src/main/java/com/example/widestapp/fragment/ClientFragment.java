@@ -53,11 +53,6 @@ public class ClientFragment extends Fragment implements BottomNavigationView.OnN
                 transaction.commit();
                 break;
 
-            case R.id.change_page:
-                Fragment updatecli =  UpdateClientFragment.newInstance();
-                transaction.replace(R.id.fragment_container_cli, updatecli);
-                transaction.commit();
-                break;
 
             case R.id.select_page:
                 Fragment selectcli = SelectCliFragment.newInstance();

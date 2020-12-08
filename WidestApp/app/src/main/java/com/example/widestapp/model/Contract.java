@@ -80,7 +80,7 @@ public class Contract {
         database.insertOrThrow("Contrato",null, values);
     }
 
-    public List<Contract> select(Context context)
+    public static List<Contract> select(Context context)
     {
         SQLiteDatabase wv = Database.openFrom(context);
         Cursor cursor = wv.rawQuery("SELECT * FROM Contrato", null);

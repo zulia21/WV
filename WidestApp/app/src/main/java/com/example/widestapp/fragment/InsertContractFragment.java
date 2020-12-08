@@ -109,7 +109,7 @@ public class InsertContractFragment extends Fragment implements AdapterView.OnIt
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
     {
-        switch (view.getId())
+        switch (parent.getId())
         {
             case R.id.spinnerclicorresp:
                 Client client = clients.get(position);

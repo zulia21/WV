@@ -1,10 +1,12 @@
 package com.example.widestapp.fragment;
 
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -18,6 +20,7 @@ import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.widestapp.R;
+import com.example.widestapp.activity.ProjectActivity;
 import com.example.widestapp.adapter.SliderAdapter;
 import com.example.widestapp.adapter.WorkAdapter;
 import com.example.widestapp.model.Project;
@@ -34,13 +37,17 @@ public class MenuFragment extends Fragment {
 
     WorkAdapter adapter;
 
+    String nomeproj;
 
+    public final static String NOME_PROJ = null;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
         List<Project> projects = Project.select(getContext());
+
+
 
         List<PreviousWork> recyclerViewItems = new ArrayList<>();
         List<SliderItem> viewPagerItems = new ArrayList<>();
@@ -71,9 +78,6 @@ public class MenuFragment extends Fragment {
 
         ViewPager2 viewPager2 = view.findViewById(R.id.viewPagerImageSlider);
 
-//         List<SliderItem> sliderItems = new ArrayList<>();
-//         sliderItems.add(new SliderItem(R.drawable.capaool, "Out Of Lens", "Fotografia"));
-//         sliderItems.add(new SliderItem(R.drawable.capapatolandia, "Patolândia", "Parque de Diversões"));
 
         viewPager2.setAdapter(new SliderAdapter(viewPagerItems));
         viewPager2.setClipToPadding(false);
@@ -92,23 +96,36 @@ public class MenuFragment extends Fragment {
 
         viewPager2.setPageTransformer(compositePageTransformer);
 
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                Project project = projects.get(position);
+                nomeproj = project.getName();
+
+            }
+        });
+        viewPager2.performClick();
+        viewPager2.setOnClickListener(this::uniaoProjetos);
+
         // recyclerview
         recyclerView = view.findViewById(R.id.trab_anterior_recyclerview);
-        java.util.function.Function<Integer, Uri> uri = (resource) -> Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
-                "://" + getResources().getResourcePackageName(resource)
-                + '/' + getResources().getResourceTypeName(resource) + '/'
-                + getResources().getResourceEntryName(resource));
-
-
-
-
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new WorkAdapter(getContext(), recyclerViewItems);
         recyclerView.setAdapter(adapter);
 
+
         return view;
 
+    }
+
+    public void uniaoProjetos(View view)
+    {
+
+        Intent intent = new Intent(getContext(), ProjectActivity.class);
+        intent.putExtra(NOME_PROJ, nomeproj);
+        startActivity(intent);
     }
 
 }

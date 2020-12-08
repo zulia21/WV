@@ -1,83 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222">
 
     <TextView
-        android:id="@+id/txthintnamep15"
+        android:id="@+id/txtnomeselectcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="376dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="312dp"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/nome"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txthintnamep16"
+        android:id="@+id/txtselectdescricaocontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="336dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/clicorrespond"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txthintnamep17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="296dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/projetocorrespod"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txthintnamep18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="256dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_thin"
         android:text="@string/descservico"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/txtnomeselectcontract"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomeselectcontract" />
 
     <TextView
-        android:id="@+id/txthintnamep19"
+        android:id="@+id/txtselectvalorcontract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="216dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/roboto"
         android:text="@string/valorservico"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtprojcorrespcontract"
+        app:layout_constraintTop_toBottomOf="@+id/txtprojcorrespcontract" />
+
+    <TextView
+        android:id="@+id/txtclicorrespcontrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="256dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/clicorrespond"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthintnamep18"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintStart_toStartOf="@+id/txtselectdescricaocontract" />
+
+    <TextView
+        android:id="@+id/txtprojcorrespcontract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="224dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/projetocorrespod"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtclicorrespcontrato" />
 
     <Spinner
         android:id="@+id/spinnerselectcontract"

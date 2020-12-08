@@ -61,6 +61,7 @@ public class InsertServicesFragment extends Fragment {
             descricao.setError("Uma descrição deve ser informada");
         }
 
+
         if (ativo.isChecked())
         {
             valorswitch = true;

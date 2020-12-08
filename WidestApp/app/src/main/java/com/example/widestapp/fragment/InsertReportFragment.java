@@ -96,6 +96,11 @@ public class InsertReportFragment extends Fragment implements AdapterView.OnItem
             return;
 
         }
+        if (!Data.matches("\\d\\d/\\d\\d/\\d{4}"))
+        {
+            data.setError("A data deve ser preenchida corretamente");
+            return;
+        }
         new Report(
                 null,
                 Nome,

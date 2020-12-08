@@ -39,11 +39,6 @@ public class ContractFragment extends Fragment implements BottomNavigationView.O
                 transaction.commit();
                 break;
 
-            case R.id.change_page:
-                Fragment updatecontract = UpdateContractFragment.newInstance();
-                transaction.replace(R.id.fragment_container_contract, updatecontract);
-                transaction.commit();
-                break;
             case R.id.select_page:
                 Fragment selectcontract = SelectContractFragment.newInstance();
                 transaction.replace(R.id.fragment_container_contract, selectcontract);

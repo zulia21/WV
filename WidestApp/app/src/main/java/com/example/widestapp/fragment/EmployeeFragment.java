@@ -39,11 +39,7 @@ public class EmployeeFragment extends Fragment implements BottomNavigationView.O
                 transaction.replace(R.id.fragment_container_employee, insertemployee);
                 transaction.commit();
                 break;
-            case R.id.change_page:
-                Fragment updateemployee =  UpdateEmployeeFragment.newInstance();
-                transaction.replace(R.id.fragment_container_employee, updateemployee);
-                transaction.commit();
-                break;
+
             case R.id.select_page:
                 Fragment selectemployee =  SelectEmployeeFragment.newInstance();
                 transaction.replace(R.id.fragment_container_employee, selectemployee);

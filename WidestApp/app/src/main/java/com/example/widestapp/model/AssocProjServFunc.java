@@ -60,7 +60,7 @@ public class AssocProjServFunc {
 
     }
 
-    public List<AssocProjServFunc> select(Context context)
+    public static List<AssocProjServFunc> select(Context context)
     {
         SQLiteDatabase wv = Database.openFrom(context);
         Cursor cursor = wv.rawQuery("SELECT * FROM ASSOC_SERV_PROJ_FUNC", null);

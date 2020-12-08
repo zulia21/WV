@@ -243,6 +243,11 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
             tema.setError("O tema deve ser informado");
             return;
         }
+        if (!Data.matches("\\d\\d/\\d\\d/\\d{4}"))
+        {
+            data.setError("Preencha com uma data válida");
+            return;
+        }
 
         id  = new Project(
                 null,
@@ -266,10 +271,17 @@ public class InsertProjectFragment extends Fragment implements AdapterView.OnIte
 
     public void salvarImagem(View view){
         try {
-            salvarFotos(urifotos);
-            uniao.setVisibility(TextView.VISIBLE);
-            uniao.setOnClickListener(this::unir);
+            if (urifotos != null) {
+                salvarFotos(urifotos);
+                uniao.setVisibility(TextView.VISIBLE);
+                uniao.setOnClickListener(this::unir);
+            }
+            else {
+                Snackbar.make(getActivity().findViewById(android.R.id.content), "Ao menos uma foto com deve ser informada", Snackbar.LENGTH_LONG)
+                        .show();
+                return;
 
+            }
         }
         catch (IOException e)
         {
