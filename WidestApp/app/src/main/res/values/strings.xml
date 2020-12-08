@@ -73,8 +73,13 @@
     <string name="servicocorresp"> Serviço correspondente </string>
     <string name="funcio"> Funcionário correspondente </string>
     <string name="ligacao"> Ligação funcionário projeto </string>
-    <string name="ligarcom"> <u>Realizar união</u> </string>
+    <string name="ligarcom"> <u> Realizar união </u></string>
     <string name="relatorio"> Relatório </string>
+    <string name="inserirrelato"> Novo Relatório </string>
+    <string name="conteudo"> Conteúdo </string>
+    <string name="proproj"><justify>Projeto Relacionado </justify>  </string>
+    <string name="consultarelatorio"> Consulta de Relatório </string>
+    <string name="selecionerelatorio"> Selecione um relatório </string>
 
 
 </resources>
