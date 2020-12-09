@@ -107,11 +107,14 @@ public class ProjectActivity extends AppCompatActivity {
         {
             if (employee.getId().equals(codfunc))
             {
-                viewpagerFunc.add(new SliderItem(Uri.parse(employee.getImageName()), employee.getName(), null));
+                if (employee.getImageName() != null)
+                {
+                    viewpagerFunc.add(new SliderItem(Uri.parse(employee.getImageName()), employee.getName(), null));
+                }
             }
-            viewpagerfunc.setAdapter(new SliderAdapter(viewpagerFunc));
 
         }
+        viewpagerfunc.setAdapter(new SliderAdapter(viewpagerFunc));
 
 
     }

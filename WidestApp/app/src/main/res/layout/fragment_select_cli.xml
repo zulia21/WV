@@ -59,7 +59,7 @@
 
     <LinearLayout
         android:layout_width="275dp"
-        android:layout_height="208dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
             android:text="@string/nome"
             android:textAlignment="textStart"
             android:textColor="#FFFFFF"
-            android:textSize="44sp" />
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/txthintcnpjselectcli"

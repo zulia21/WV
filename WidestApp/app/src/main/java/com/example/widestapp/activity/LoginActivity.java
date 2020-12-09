@@ -43,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
         wv.onCreate(Database.openFrom(this));
 
 
-
     }
 
     public void trocarVisibilidade(View v)

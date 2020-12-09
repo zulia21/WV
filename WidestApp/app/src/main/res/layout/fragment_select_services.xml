@@ -25,12 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="4dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/descservico"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txthintselectnameservico"
+        app:layout_constraintStart_toStartOf="@+id/txthintselectnameservico"
         app:layout_constraintTop_toBottomOf="@+id/txthintselectnameservico" />
 
     <TextView

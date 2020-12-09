@@ -100,8 +100,8 @@ public class MenuFragment extends Fragment {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
-                Project project = projects.get(position);
-                nomeproj = project.getName();
+                SliderItem sliderItem = viewPagerItems.get(position);
+                nomeproj = sliderItem.getTitle();
 
             }
         });
